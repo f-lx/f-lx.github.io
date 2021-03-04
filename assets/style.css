@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'LatoRegular';
+    src: url('LatoLatin-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'LatoLight';
+    src: url('LatoLatin-Light.woff2') format('woff2');
+}
+
+body {
+    font-family: 'LatoLight';
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #121212;
+    max-width: 50rem;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+@media (min-width: 30rem) {
+    body {
+        padding: 0 2rem 0 2rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.left{
+text-align: left;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.profilbild {
+    margin: 1.5rem;
+}
+
+.profilbild::before {
+    content: '';
+    display: block;
+    position: relative;
+    top: 100px;
+    left: -3rem;
+    width: calc(100% + 6rem);
+    height: 1px;
+    z-index: -1;
+    background: linear-gradient(90deg, #FE0000, #FD8C00, #FFE500, #119F0B, #0644B3, #C22EDC);
+}
+
+img {
+    border-radius: 50%;
+    box-shadow: 0 0 0 1.5em #121212;
+}
+
+.footer{
+    margin-top: 2rem;
+}
+
+.cat{
+    width: 100%;
+}
